@@ -1,0 +1,27 @@
+doctype html 
+html
+  head
+    title DanceAcademy
+    block script
+    block style 
+  body
+    block nav 
+        nav#navbar.top 
+          ul 
+            li  #[img.logo(src="/static/logo.png", alt="img")]
+            li #[a(href="/")  Home]
+            li #[a(href="/")  About]
+            li #[a(href="/contact")  Contact us]
+            li #[a(href="/")  Services]    
+            li#stuff
+             div#search
+               input#input(type="text", name="search", placeholder="search here")
+               button.btn#main Search    
+               button.btn Sign up   
+               button.btn Login 
+        
+    block content
+    block foot
+        footer#footer
+            p © 2021-till now | DanceAcademy Inc. pvt. ltd. | All rights reserved - #[a.link(href="#") Terms and conditions ] - #[a.link(href="#")  Contact us] - #[a.link(href="#")  About us] - #[a.link(href="#")  Our sponsers]
+            div#last #[a.link(href="#") Back to top]  

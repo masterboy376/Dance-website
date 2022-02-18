@@ -1,0 +1,35 @@
+extends base.pug
+
+block script 
+    script(src="/static/home.js")
+    
+block style 
+    style 
+        include ../static/home.css 
+
+block content
+    section#intro 
+        div#introhead Welcome to our dance academy! 
+        div#introbody When you dance, your purpose is not to get on the floor, but to enjoy each step in it. 
+
+    section#sponser 
+        card#card1.card
+            img.img(src="/static/card1.jfif", alt="")
+            h2 Membership for your little kiddies! 
+            p As early as good, and so, give your kids the special gift with our kids membership.
+            button.cbtn#btn1 More details
+        card#card2.card
+            img.img(src="/static/card2.jfif", alt="")
+            h2 Membership for youngsters! 
+            p This is the time to make your dreams come true, so let us do it. Get the affordable membership for multiple time frames.
+            button.cbtn#btn2 More details
+        card#card3.card
+            img.img(src="/static/card3.jfif", alt="")
+            h2 Membership for busy professionals! 
+            p This program is designed for those working individual, who want to get metaly and physically fit. 
+            button.cbtn#btn3 More details
+        card#card4.card
+            img.img(src="/static/card4.jfif", alt="")
+            h2 Membership for pensioners! 
+            p This course will provide you with brand new enthusiasm in your post retirement life.
+            button.cbtn#btn4 More details        

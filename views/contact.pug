@@ -1,0 +1,24 @@
+extends base.pug 
+
+block style 
+    style 
+       include ../static/home.css 
+       include ../static/contact.css 
+
+block script 
+    script(src="/static/home.js")
+
+block content 
+     div.container 
+        h1.form-head Contact us
+        form.contact(action="/contact", method="POST") 
+            label(for="firstName") First name:
+            input.form(type="text", id="firstName", name="firstName", placeholder="eg, Jack")
+            label(for="lastName") Last name:
+            input.form(type="text", id="lastName", name="lastName", placeholder="eg, Muller")
+            label(for="email") Email: 
+            input.form(type="email", name="email", id="email", placeholder="abc@dash.com") 
+            label(for="message") Message: 
+            textarea.form(name="message", id="message", cols="30", rows="10",  placeholder="write here") 
+            input.submit(type="submit", value="Submit")
+               
